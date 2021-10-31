@@ -1,6 +1,6 @@
 from typing import Any, Dict, Optional
 
-from pydantic import BaseSettings, PostgresDsn, validator
+from pydantic import BaseSettings, PostgresDsn, validator, Field
 
 
 class Settings(BaseSettings):
@@ -22,7 +22,10 @@ class Settings(BaseSettings):
             path=f"/{values.get('POSTGRES_DB') or ''}",
         )
 
-    WEATHERBIT_API_KEY: str
+    WEATHERBIT_API_KEY: str = Field(..., env="WEATHERBIT_API_KEY")
+    WEATHERBIT_BASE_URL: str = "http://api.weatherbit.io/v2.0"
+    HISTORY_LAT_LNG_ENDPOINT: str = "/history/daily"
+    ENDPOINT_PARAMS: str = "?lat={lat}&lon={lon}&start_date={start_date}&end_date={end_date}&key={key}"
 
 
 settings = Settings()

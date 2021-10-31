@@ -1,8 +1,8 @@
 """Init
 
-Revision ID: 7e2014ee4cf4
+Revision ID: 150e293909eb
 Revises: 
-Create Date: 2021-10-31 00:14:37.665842
+Create Date: 2021-10-31 13:26:24.378193
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '7e2014ee4cf4'
+revision = '150e293909eb'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -30,9 +30,13 @@ def upgrade():
     op.create_table('timeseries',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('timestamp', sa.Integer(), nullable=True),
+    sa.Column('min_temp', sa.Float(), nullable=True),
+    sa.Column('max_temp', sa.Float(), nullable=True),
+    sa.Column('mean_temp', sa.Float(), nullable=True),
     sa.Column('location_id', sa.Integer(), nullable=True),
     sa.ForeignKeyConstraint(['location_id'], ['location.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('location_id', 'timestamp', name='location_timestamp')
     )
     op.create_index(op.f('ix_timeseries_id'), 'timeseries', ['id'], unique=False)
     # ### end Alembic commands ###

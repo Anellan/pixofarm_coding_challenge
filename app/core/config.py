@@ -22,5 +22,7 @@ class Settings(BaseSettings):
             path=f"/{values.get('POSTGRES_DB') or ''}",
         )
 
+    WEATHERBIT_API_KEY: str
+
 
 settings = Settings()

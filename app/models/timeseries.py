@@ -8,3 +8,7 @@ class TimeSeries(Base):
     timestamp = Column(Integer)
     location = relationship("Location")
     location_id = Column(Integer, ForeignKey("location.id"))
+
+    def __init__(self, timestamp, location_id):
+        self.timestamp = timestamp
+        self.location_id = location_id

@@ -12,10 +12,9 @@ services:
       dockerfile: docker/app/app.dockerfile
     env_file:
       - .env
+      - weatherbit.env
     volumes:
       - .:/app
-    ports:
-      - "8000:8000"
     depends_on:
       - db
 

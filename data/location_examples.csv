@@ -1,0 +1,25 @@
+city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id,continent
+Tokyo,Tokyo,35.6897,139.6922,Japan,JP,JPN,Tōkyō,primary,37977000,1392685764,Asia
+Delhi,Delhi,28.6600,77.2300,India,IN,IND,Delhi,admin,29617000,1356872604,Asia
+Mumbai,Mumbai,18.9667,72.8333,India,IN,IND,Mahārāshtra,admin,23355000,1356226629,Asia
+Seoul,Seoul,37.5600,126.9900,Korea,"South,KR",KOR,Seoul,primary,21794000,1410836482,Asia
+Paris,Paris,48.8566,2.3522,France,FR,FRA,Île-de-France,primary,11020000,1250015082,Europe
+London,London,51.5072,-0.1275,United Kingdom,GB,GBR,London,10979000,1826645935,Europe
+Barcelona,Barcelona,41.3825,2.1769,Spain,ES,ESP,Catalonia,admin,4588000,1724594040,Europe
+Milan,Milan,45.4669,9.1900,Italy,IT,ITA,Lombardy,admin,1366180,1380724377,Europe
+Vereeniging,Vereeniging,-26.6736,27.9319,South Africa,ZA,ZAF,Gauteng,,1074000,1710271883,Africa
+Rabat,Rabat,34.0253,-6.8361,Morocco,MA,MAR,Rabat-Salé-Kénitra,primary,572717,1504023252,Africa
+Numan,Numan,9.4669,12.0328,Nigeria,NG,NGA,Adamawa,minor,77617,1566815415,Africa
+Lodja,Lodja,-3.4900,23.4200,Congo (Kinshasa),CD,COD,Sankuru,,68244,1180001261,Africa
+Wagga Wagga,Wagga Wagga,-35.1189,147.3689,Australia,AU,AUS,New South Wales,,56442,1036273188,Australia
+Albury,Albury,-36.0806,146.9158,Australia,AU,AUS,New South Wales,,47974,1036076542,Australia
+Upper Hutt,Upper Hutt,-41.1333,175.0500,New Zealand,NZ,NZL,Wellington,,44300,1554000042,Australia
+Whanganui,Whanganui,-39.9333,175.0500,New Zealand,NZ,NZL,Manawatu-Wanganui,,42200,1554827998,Australia
+American Fork,American Fork,40.3792,-111.7952,United States,US,USA,Utah,,33161,1840018756,North America
+Franklin,Franklin,41.1101,-74.5886,United States,US,USA,New Jersey,,33153,1840003480,North America
+Matthews,Matthews,35.1195,-80.7101,United States,US,USA,North Carolina,,33138,1840016350,North America
+Florence,Florence,38.9900,-84.6470,United States,US,USA,Kentucky,,33004,1840013161,North America
+Imbituva,Imbituva,-25.2300,-50.6044,Brazil,BR,BRA,Paraná,,32940,1076855265,South America
+Esperança,Esperanca,-7.0333,-35.8500,Brazil,BR,BRA,Paraíba,,32785,1076765835,South America
+Concón,Concon,-32.9167,-71.5167,Chile,CL,CHL,Valparaíso,,32273,1152523682,South America
+La Calera,La Calera,-31.3439,-64.3353,Argentina,AR,ARG,Córdoba,,32227,1032927400,South America

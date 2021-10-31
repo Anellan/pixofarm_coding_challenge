@@ -1,4 +1,6 @@
 sqlalchemy
-alembic
 pydantic
 psycopg2-binary
+pandas
+tenacity
+alembic
